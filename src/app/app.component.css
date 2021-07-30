@@ -131,3 +131,14 @@ ul li a{
 .post{
     padding: 60px 0px 0px 70px;
 }
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #06070DC7;
+}
+.footer p{
+    color: #525252;
+    text-align: center;
+}

@@ -3,38 +3,38 @@ export class postService{
         {
           id: 1,
           id_user : 1,
-          title : 'Desolation of mordor',
+          title : 'Beyound good & evil - Jade',
           imgpath: '../../assets/img/photo.jpg'
         },
         {
           id: 2,
           id_user : 2,
-          title : 'Bathman arkman',
-          imgpath: '../../assets/img/photo2.jpg'
-        },
-        {
-          id: 2,
-          id_user : 2,
-          title : 'Bathman arkman',
-          imgpath: '../../assets/img/photo2.jpg'
-        },
-        {
-          id: 2,
-          id_user : 2,
-          title : 'Bathman arkman',
-          imgpath: '../../assets/img/photo2.jpg'
-        },
-        {
-          id: 2,
-          id_user : 2,
-          title : 'Bathman arkman',
-          imgpath: '../../assets/img/photo2.jpg'
+          title : 'Manette Ps4',
+          imgpath: '../../assets/img/photo3.jpg'
         },
         {
           id: 3,
           id_user : 3,
-          title : 'Desolation of mordor',
-          imgpath: '../../assets/img/photo.jpg'
+          title : 'Grrrrrr !!!!',
+          imgpath: '../../assets/img/photo4.jpg'
+        },
+        {
+          id: 4,
+          id_user : 4,
+          title : 'Atlantas <3',
+          imgpath: '../../assets/img/photo6.jpg'
+        },
+        {
+          id: 5,
+          id_user : 5,
+          title : 'Assassin scread',
+          imgpath: '../../assets/img/photo5.jpg'
+        },
+        {
+          id: 6,
+          id_user : 6,
+          title : 'The planet',
+          imgpath: '../../assets/img/photo2.jpg'
         }
       ];
     GetPostById(id : number){

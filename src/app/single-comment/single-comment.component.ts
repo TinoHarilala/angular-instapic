@@ -15,6 +15,7 @@ export class SingleCommentComponent implements OnInit {
       idpost !: number;
     @Input()
       comment!: string;
+      
     path !: string;
     name !: string;
 

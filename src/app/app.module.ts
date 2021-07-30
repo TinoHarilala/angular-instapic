@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {FormsModule} from'@angular/forms'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +13,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { PostCommentComponent } from './post-comment/post-comment.component';
 import { SingleCommentComponent } from './single-comment/single-comment.component';
 import {commentService} from'./Services/comment-service';
+
 
 const appRoutes: Routes = [
   { path: 'comment', component: PostCommentComponent },
@@ -32,7 +34,9 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    BrowserModule,
+    FormsModule
   ],
   providers: [
     postService,

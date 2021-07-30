@@ -9,21 +9,27 @@ import { commentService } from '../Services/comment-service';
   styleUrls: ['./post-comment.component.css']
 })
 export class PostCommentComponent implements OnInit {
-
   pathimg !: string;
   iduser !: number;
   comments !: any[];
+  textinput !: string;
+  postcomment !: any[];
+
+  addcomment(){
+    if(this.textinput != "")
+      this.postcomment.unshift({id:1,id_user:1,id_post:this.iduser,commentary:this.textinput});
+  }
 
   constructor(private postservice : postService, private route : ActivatedRoute, private commentservice : commentService) { 
-  
   }
 
   ngOnInit(): void {
     const id = this.route.snapshot.params['id'];
     this.pathimg = this.postservice.GetPostById(+id)!.imgpath;
     this.iduser = this.postservice.GetPostById(+id)!.id_user;
+    this.postcomment = this.commentservice.comments;
 
     this.comments = this.commentservice.comments;
   }
-
+  
 }

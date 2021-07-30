@@ -24,8 +24,8 @@
             <div class="content-right">
                 <div class="guard">
                     <h2>Commentary</h2>
-                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="add your comment here"></textarea>
-                    <input type="button" id="comment" value="Envoyer">
+                    <textarea [(ngModel)]="textinput" placeholder="add your comment here" ></textarea>
+                    <button class="input" (click)="addcomment()">Send</button>  
                 </div>
             </div>
     </div>

@@ -39,6 +39,11 @@ h2{
 }
 .content-right{
     width: 30%;
+    position: fixed;
+    top: 50;
+    right: 0;
+    bottom: 0;
+    top: 50px;
 }
 .comments{
     width: 70%;
@@ -58,7 +63,6 @@ h2{
     background-color: #0F1117;
 }
 .guard h2{
-    text-align: center;
     padding:40px 0px;
 }
 .guard{
@@ -79,13 +83,18 @@ h2{
     font-weight: 600;
     color: #999;
 }
-input{
+.input{
     width: 200px;
     background-color: #000;
     color: #999;
     border: none;
     margin-top: 20px;
     height: 40px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
+    background-image: url(../../assets/img/send.png);
+    background-position: 90% 50%;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }

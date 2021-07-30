@@ -48,3 +48,22 @@
 .post:hover .info-post{
     display: flex;
 }
+.contener-comments ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+.contener-comments ul li{
+    width: 50px;
+    height: 50px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    margin: 0px 30px;
+}
+.contener-comments li:nth-child(1){
+    background-image: url(../../assets/img/heart.png);
+}
+.contener-comments li:nth-child(2){
+    background-image: url(../../assets/img/comment.png);
+}
